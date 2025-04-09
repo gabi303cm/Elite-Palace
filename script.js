@@ -22,12 +22,12 @@ function displayCart() {
 }
 
 function payWithBkash() {
-    // You need to integrate Bkash's payment API here. Bkash requires specific credentials.
+    // Placeholder for Bkash API integration
     alert("Bkash payment integration will be available soon. Total: " + totalAmount + " BDT.");
 }
 
 function payOnDelivery() {
-    // Add the COD fee
+    // Add COD fee
     const totalWithCOD = totalAmount + 100;
     alert("Total with COD fee (100 BDT): " + totalWithCOD + " BDT. Thank you for choosing Cash on Delivery!");
 }
