@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite sKy - Fashion Store</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- PayPal SDK -->
+    <script src="https://www.paypal.com/sdk/js?client-id=YOUR_PAYPAL_CLIENT_ID&components=buttons"></script>
+</head>
+<body>
+    <header>
+        <h1>Elite sKy - Fashion Store</h1>
+    </header>
+
+    <div class="products">
+        <div class="product" id="product1">
+            <img src="assets/product1.jpg" alt="Product 1">
+            <h2>Stylish Jacket</h2>
+            <p>Price: 2000 BDT</p>
+            <button onclick="addToCart('Stylish Jacket', 2000)">Add to Cart</button>
+        </div>
+        <div class="product" id="product2">
+            <img src="assets/product2.jpg" alt="Product 2">
+            <h2>Casual Shirt</h2>
+            <p>Price: 1200 BDT</p>
+            <button onclick="addToCart('Casual Shirt', 1200)">Add to Cart</button>
+        </div>
+        <!-- Add more products here -->
+    </div>
+
+    <h2>Shopping Cart</h2>
+    <div id="cart"></div>
+    
+    <div id="total"></div>
+
+    <div class="payment-options">
+        <h3>Choose Payment Method</h3>
+        <button id="paypal-button-container"></button>
+        <button onclick="payWithBkash()">Pay with Bkash</button>
+        <button onclick="payOnDelivery()">Cash on Delivery (100 BDT Fee)</button>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Elite sKy. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
